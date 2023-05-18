@@ -10,3 +10,15 @@
 .menu-item .menu-link.disabled {
     color: #C0C0C0 !important;
 }
+
+.section-colored {
+    background-color: #BC2020D1 !important;
+}
+
+.section-colored h3 {
+    color: #fff;
+}
+
+/*.button-black:not(.button-border) {
+    background-color: #ff6c00 !important;
+}*/

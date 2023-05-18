@@ -18,7 +18,7 @@ use PHPMailer\PHPMailer\Exception;
 
 require '/var/www/vhosts/rajyaseva.in/httpdocs/include/phpmailer/src/Exception.php';
 require '/var/www/vhosts/rajyaseva.in/httpdocs/include/phpmailer/src/PHPMailer.php';
-require '/var/www/vhosts/rajyaseva.in//httpdocs/include/phpmailer/src/SMTP.php';
+require '/var/www/vhosts/rajyaseva.in/httpdocs/include/phpmailer/src/SMTP.php';
 
 
 /*-------------------------------------------------
@@ -61,13 +61,13 @@ $mail = new PHPMailer(true);
 
 $mail->IsSMTP();
 
-  $mail->SMTPDebug  = 0;  
+  $mail->SMTPDebug  = 0;
   $mail->SMTPAuth   = TRUE;
-  $mail->SMTPSecure = "tls";
+  $mail->SMTPSecure = "ssl";
   $mail->Port       = 465;
   $mail->Host       = "sharedlinux.cloudhostdns.net";
-  $mail->Username   = "pasha@rajyaseva.in";
-  $mail->Password   = "#mI3n5o41";
+  $mail->Username   = "";
+  $mail->Password   = "";
 
 $mail->smtpClose();
 
