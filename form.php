@@ -28,7 +28,7 @@ require '/var/www/vhosts/rajyaseva.in/httpdocs/include/phpmailer/src/SMTP.php';
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'pasha@rajyaseva.in', // Your Email Address
+				'email' => 'info@rajyaseva.in', // Your Email Address
 				'name' => 'Your Name' // Your Name
 			);
 
@@ -64,10 +64,10 @@ $mail->IsSMTP();
   $mail->SMTPDebug  = 0;
   $mail->SMTPAuth   = TRUE;
   $mail->SMTPSecure = "ssl";
-  $mail->Port       = 465;
-  $mail->Host       = "sharedlinux.cloudhostdns.net";
-  $mail->Username   = "";
-  $mail->Password   = "";
+  $mail->Port       = 587;
+  $mail->Host       = "smtp.postmarkapp.com";
+  $mail->Username   = "b642b789-3e97-4aa7-9d39-84c385205e36";
+  $mail->Password   = "b642b789-3e97-4aa7-9d39-84c385205e36";
 
 $mail->smtpClose();
 
