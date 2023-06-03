@@ -281,6 +281,13 @@
 		});
 	</script>
 
+	<script>
+		document.getElementById("template-contactform").onsubmit = e => {
+			e.preventDefault();
+			document.getElementById("template-contactform-submit").disabled = true;
+		};
+	</script>
+
 </body>
 </html>
 				
