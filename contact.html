@@ -45,6 +45,21 @@
 		}
 
 	</style>
+	<script>
+		function enableSubmit(){
+			let inputs = document.getElementsByClassName('form-enable'); // Enter your class name for a required field, this should also be reflected within your form fields.
+			let btn = document.querySelector('input[type="submit"]');
+			let isValid = true;
+			for (var i = 0; i < inputs.length; i++){
+			let changedInput = inputs[i];
+			if (changedInput.value.trim() === "" || changedInput.value === null){
+			isValid = false;
+			break;
+			}
+			}
+			btn.disabled = !isValid;
+		}
+	</script>
 
 </head>
 
@@ -174,12 +189,12 @@
 
 								<div class="col-md-6 form-group">
 									<label for="template-contactform-name">Name <small>*</small></label>
-									<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" />
+									<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="form-enable sm-form-control required" onkeyup="enableSubmit()" />
 								</div>
 
 								<div class="col-md-6 form-group">
 									<label for="template-contactform-email">Email <small>*</small></label>
-									<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" />
+									<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="form-enable required email sm-form-control" onkeyup="enableSubmit()" />
 								</div>
 
 								<div class="w-100"></div>
@@ -193,12 +208,12 @@
 
 								<div class="col-12 form-group">
 									<label for="template-contactform-subject">Subject <small>*</small></label>
-									<input type="text" id="template-contactform-subject" name="subject" value="" class="required sm-form-control" />
+									<input type="text" id="template-contactform-subject" name="subject" value="" class="form-enable required sm-form-control" onkeyup="enableSubmit()" />
 								</div>
 
 								<div class="col-12 form-group">
 									<label for="template-contactform-message">Message <small>*</small></label>
-									<textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30"></textarea>
+									<textarea class="form-enable required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30" onkeyup="enableSubmit()"></textarea>
 								</div>
 
 								<div class="col-12 form-group d-none">
@@ -206,7 +221,7 @@
 								</div>
 
 								<div class="col-12 form-group">
-									<button class="button button-3d m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
+									<input class="button button-3d m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit" disabled>
 								</div>
 
 								<input type="hidden" name="prefix" value="template-contactform-">
