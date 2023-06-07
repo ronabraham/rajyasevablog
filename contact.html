@@ -45,7 +45,7 @@
 		}
 
 	</style>
-	<script>
+	<!-- <script>
 		function enableSubmit(){
 			let inputs = document.getElementsByClassName('form-enable'); // Enter your class name for a required field, this should also be reflected within your form fields.
 			let btn = document.querySelector('input[type="submit"]');
@@ -59,7 +59,7 @@
 			}
 			btn.disabled = !isValid;
 		}
-	</script>
+	</script> -->
 
 </head>
 
@@ -122,9 +122,6 @@
 								<a href="#" id="top-search-trigger"><i class="icon-line-search"></i><i class="icon-line-cross"></i></a>
 							</div><!-- #top-search end -->
 
-							<!-- <div class="dark-mode header-misc-icon d-none d-md-block">
-								<a href="#"><i class="icon-dark"></i></a>
-							</div> -->
 						</div>
 
 						<div id="primary-menu-trigger">
@@ -189,12 +186,12 @@
 
 								<div class="col-md-6 form-group">
 									<label for="template-contactform-name">Name <small>*</small></label>
-									<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="form-enable sm-form-control required" onkeyup="enableSubmit()" />
+									<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="form-enable sm-form-control required" />
 								</div>
 
 								<div class="col-md-6 form-group">
 									<label for="template-contactform-email">Email <small>*</small></label>
-									<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="form-enable required email sm-form-control" onkeyup="enableSubmit()" />
+									<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="form-enable required email sm-form-control" />
 								</div>
 
 								<div class="w-100"></div>
@@ -208,12 +205,12 @@
 
 								<div class="col-12 form-group">
 									<label for="template-contactform-subject">Subject <small>*</small></label>
-									<input type="text" id="template-contactform-subject" name="subject" value="" class="form-enable required sm-form-control" onkeyup="enableSubmit()" />
+									<input type="text" id="template-contactform-subject" name="subject" value="" class="form-enable required sm-form-control" />
 								</div>
 
 								<div class="col-12 form-group">
 									<label for="template-contactform-message">Message <small>*</small></label>
-									<textarea class="form-enable required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30" onkeyup="enableSubmit()"></textarea>
+									<textarea class="form-enable required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30" ></textarea>
 								</div>
 
 								<div class="col-12 form-group d-none">
@@ -221,7 +218,7 @@
 								</div>
 
 								<div class="col-12 form-group">
-									<input class="button button-3d m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit" disabled>
+									<button class="button button-3d m-0" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit" >Send Message</button>
 								</div>
 
 								<input type="hidden" name="prefix" value="template-contactform-">
@@ -294,11 +291,6 @@
 
 		jQuery('.divider-text').html( weekday[a.getDay()] + ', ' + month[a.getMonth()] + ' ' + a.getDate() + ', ' + a.getFullYear() );
 
-		jQuery('.dark-mode').on( 'click', function() {
-		    jQuery("body").toggleClass('dark');
-		    SEMICOLON.header.logo();
-		    return false;
-		});
 	</script>
 
 	<script>
