@@ -1,0 +1,49 @@
+html{
+  margin, padding : 0px;
+  border: 1px solid #7D666D;
+  background-color : #7D666D;
+}
+body {
+  width: 800px;
+  height: 600px;
+ //border: 1px solid black;
+  padding:0;
+  margin:0 auto;
+}
+#text {
+  padding-left: 15px;
+font-family: Tahoma;
+}
+#walls {
+  background-image : url("https://res.cloudinary.com/dpmnlgeqx/image/upload/v1497603950/Reference_sleo4k.png");
+  
+  margin : 0 auto;
+}
+canvas {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+}
+button {
+  color : black;
+  background-color : white;
+  border-radius : 10px;
+  font-size : 10px;
+  font-family : "Verdana";
+  border : 1px solid gray;
+  margin: 10px;
+  
+}
+
+#fps,#dx,#dy {
+	width: 20px;
+	text-align: center;
+  background-color : white;
+  border : 1px dotted black;
+}
+#controls{
+  text-align: right;
+width: 200px;
+float: right;
+padding-top : 40px;
+}
