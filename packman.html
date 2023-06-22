@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="author" content="SemiColonWeb" />
+
+  <!-- Games Specific Stylesheet -->
+  <link rel="stylesheet" href="games/css/packman.css" type="text/css" />
+
+  <!-- FavIcon -->
+    <link rel="shortcut icon" type="image/x-icon" href="demos/blog/images/favicon.png">
+
+  <!-- Document Title
+  ============================================= -->
+  <title>Rajyaseva - Blog</title>
+  
+
+</head>
+
+<body>
+
+    <!-- Document Wrapper
+    ============================================= -->
+    <div id="wrapper" class="clearfix">
+
+      <div id="game_bg">
+        <canvas tabindex='1' id="walls" width="800" height="600" style="position: absolute; left: 0px; top: 0px; z-index: -2">
+          Your Browser does not support canvas.
+        </canvas>
+        <canvas tabindex='2' id="caps" width="800" height="600" style="position: absolute; left: 0px; top: 0px; z-index: -1">
+          Your Browser does not support canvas.
+        </canvas>
+        <canvas tabindex='3' id="player" width="800" height="600" style="position: absolute; left: 0px; top: 0px; z-index: 0">
+          Your Browser does not support canvas.
+        </canvas>
+      </div>
+
+      <div id="controls" style="text-align:right;">
+
+        <input type="text" id="fps"><span id="text">Frames per Second</span></input><br>
+        <input id="route" type="checkbox" checked="true"> <span id="text">Show Route Map</span></input>
+        <br>
+        <button onclick="startGame()">START GAME / RESET parameters</button>
+        <button onclick="stopAnim()">END GAME</button>
+        <br>
+        <input type="text" id="dx" /><span>dx</span>
+        <input type="text" id="dy" /><span>dy</span>
+
+      </div>
+
+    </div><!-- #wrapper end -->
+
+  
+  
+
+  <!-- JavaScripts
+  ============================================= -->
+  
+  <script src="games/js/packman.js"></script>
+
+</body>
+</html>

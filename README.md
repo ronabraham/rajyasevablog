@@ -1,2 +1,6 @@
 # rajyasevablog
-A Simple Blogging Platform
+
+A Simple Blog Platform
+
+22-Jun merge to main
+
